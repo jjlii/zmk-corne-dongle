@@ -270,6 +270,10 @@ combos:
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
 - p: [30, 32]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
+- p: [29, 30]
+  k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
+- p: [29, 30, 31]
+  k: Gui+Alt+V
 - p: [7, 22]
   k: ^
 - p: [8, 23]
