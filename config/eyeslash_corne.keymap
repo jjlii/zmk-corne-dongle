@@ -41,12 +41,6 @@
             display-name = "User001";
             bindings = <&kp LS(U) &kp S &kp U &kp A &kp R &kp I &kp O &kp N0 &kp N0 &kp N1 &kp DOT>;
         };
-        m_jira: m_jira {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            display-name = "Jira Link";
-            bindings = <&kp H &kp T &kp T &kp P &kp S &kp LS(DOT) &kp LS(N7) &kp LS(N7) &kp R &kp E &kp T &kp A &kp I &kp L &kp FSLH &kp C &kp O &kp M &kp M &kp E &kp R &kp C &kp I &kp A &kp L &kp DOT &kp A &kp T &kp L &kp A &kp S &kp S &kp I &kp A &kp N &kp DOT &kp N &kp E &kp T &kp LS(N7) &kp B &kp R &kp O &kp W &kp S &kp E &kp LS(N7)>;
-        };
         // Macro SS: Cmd+Shift+Ctrl+4
         m_ss: m_ss {
             compatible = "zmk,behavior-macro";
@@ -95,8 +89,8 @@
         combo_copy   { timeout-ms = <50>; key-positions = <30 31>; bindings = <&kp LG(C)>; };      // X C (Cmd+C)
         combo_paste  { timeout-ms = <50>; key-positions = <31 32>; bindings = <&kp LG(V)>; };      // C V (Cmd+V)
         combo_cut    { timeout-ms = <50>; key-positions = <30 32>; bindings = <&kp LG(X)>; };      // X V (Cmd+X)
-        combo_zx     { timeout-ms = <50>; key-positions = <29 30>;    bindings = <&kp LG(V)>; };      // Z X (Cmd+V)
-        combo_zxc    { timeout-ms = <50>; key-positions = <29 30 31>; bindings = <&kp LG(LA(V))>; }; // Z X C (Opt+Cmd+V)
+        combo_zx     { timeout-ms = <50>; key-positions = <29 30>;    bindings = <&kp LG(Z)>; };      // Z X (Cmd+Z)
+        combo_xcv    { timeout-ms = <50>; key-positions = <30 31 32>; bindings = <&kp LG(LA(V))>; }; // X C V (Opt+Cmd+V)
 
         // --- Right Hand Vertical ---
         // Top-Home
@@ -159,7 +153,7 @@
             display-name = "NAV";
             bindings = <
 &trans  &m_code      &trans       &kp LG(GRAVE) &kp LG(TAB)   &none                                      &mmv MOVE_UP           &kp PSCRN       &kp HOME     &kp UP       &kp END       &none         &trans
-&trans  &m_user      &m_jira      &none         &none         &none                             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT &kp CAPS     &kp LEFT     &kp DOWN      &kp RIGHT     &none     &trans
+&trans  &m_user      &trans       &none         &none         &none                             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT &kp CAPS     &kp LEFT     &kp DOWN      &kp RIGHT     &none     &trans
 &trans  &none        &none        &none         &kp LG(Z)     &kp LS(LG(Z))    &trans                 &mmv MOVE_DOWN            &none           &none        &none        &none         &none         &trans
                                   &trans        &trans        &trans                                                            &trans          &trans       &trans
             >;
