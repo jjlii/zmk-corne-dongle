@@ -45,7 +45,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             display-name = "Jira Link";
-            bindings =bindings = <&kp H &kp T &kp T &kp P &kp S &kp LS(DOT) &kp LS(N7) &kp LS(N7) &kp R &kp E &kp T &kp A &kp I &kp L &kp FSLH &kp C &kp O &kp M &kp M &kp E &kp R &kp C &kp I &kp A &kp L &kp DOT &kp A &kp T &kp L &kp A &kp S &kp S &kp I &kp A &kp N &kp DOT &kp N &kp E &kp T &kp LS(N7) &kp B &kp R &kp O &kp W &kp S &kp E &kp LS(N7)>;
+            bindings = <&kp H &kp T &kp T &kp P &kp S &kp LS(DOT) &kp LS(N7) &kp LS(N7) &kp R &kp E &kp T &kp A &kp I &kp L &kp FSLH &kp C &kp O &kp M &kp M &kp E &kp R &kp C &kp I &kp A &kp L &kp DOT &kp A &kp T &kp L &kp A &kp S &kp S &kp I &kp A &kp N &kp DOT &kp N &kp E &kp T &kp LS(N7) &kp B &kp R &kp O &kp W &kp S &kp E &kp LS(N7)>;
         };
         // Macro SS: Cmd+Shift+Ctrl+4
         m_ss: m_ss {
